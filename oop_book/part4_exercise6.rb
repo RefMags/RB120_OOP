@@ -1,6 +1,6 @@
 
 =begin
-- A private method `age` to calculate the age of the vehicle
+- A method `age`  that calls a private method that calculates the age of the vehicle
 - the method should be available outside the class
 
 =end
