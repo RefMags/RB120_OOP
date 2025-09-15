@@ -8,6 +8,12 @@ class Hello < Greeting
   def hi
     greet("Hello")
   end
+
+  def self.hi
+    greeting = Hello.new
+    greeting_msg = greeting.greet("Hello")
+    greeting_msg
+  end
 end
 
 class Goodbye < Greeting
@@ -16,4 +22,7 @@ class Goodbye < Greeting
   end
 end
 
-Hello.new
+hello = Hello.new
+puts hello.hi
+
+# Hello.ancestors
