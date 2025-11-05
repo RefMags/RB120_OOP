@@ -31,6 +31,8 @@ code but whose methods can be used for some classes.
 with standard classes or others with the same name.
 
 =end
+
+## Demonstrating Inheritance
 module Fuelable
   def need_fuel
     puts "I need fuel to move"
@@ -64,6 +66,8 @@ jimny.need_fuel # => "I need fuel to move"
 # merida.need_fuel # => NoMethodError because its undefined for the instance of
 # Bicycle
 
+
+## Demonstrating Encapsulation
 class Supermarket
   attr_reader :name
 
@@ -79,6 +83,7 @@ class Supermarket
   def <(other)
     shampoo_price < other.shampoo_price
   end
+
   private
   attr_writer :shampoo_price
 
@@ -107,7 +112,7 @@ puts maruhon < itoku # => true
 # puts maruhon.shampoo_price # => NoMethodError as a result of protected method called
 # on supermarket object.
 
-# Polymorphism
+### Polymorphism
 
 # use the superclass `Transport` from above to a motocycle
 class Motorcycle < Transport
